@@ -17,12 +17,16 @@ function findShortestString(arr) {
 if (require.main === module) {
   // add your own tests in here
   console.log("Expecting: 'a'");
+  console.time("first");
   console.log(findShortestString(['aaa', 'a', 'bb', 'ccc']));
+  console.timeEnd("first");
 
   console.log("");
 
   console.log("Expecting: 'hi'");
+  console.time("second");
   console.log(findShortestString(['cat', 'hi', 'dog', 'an']));
+  console.timeEnd("second");
 
   console.log("");
 
